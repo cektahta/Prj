@@ -1,6 +1,6 @@
 <?php
 session_start();
- require_once 'dbconfig.php';
+require_once 'dbconfig.php';
 $err = [];
 $response = [];
 
@@ -31,14 +31,14 @@ $response = [];
      try
      {
 
-         $stmt = $db_con->prepare("SELECT * FROM tbl_users WHERE user_email=:email");
+         $stmt = $db_con->prepare("SELECT * FROM users WHERE user_email=:email");
          $stmt->execute(array(":email"=>$user_email));
          $count = $stmt->rowCount();
 
          if($count==0){
              $cheking = checkValidate($user_name , $user_password , $user_email, $err );
              if ($cheking) {
-                 $stmt = $db_con->prepare("INSERT INTO tbl_users(user_name,user_email,user_password,joining_date) VALUES(:uname, :email, :pass, :jdate)");
+                 $stmt = $db_con->prepare("INSERT INTO users(user_name,user_email,user_password,joining_date) VALUES(:uname, :email, :pass, :jdate)");
                  $stmt->bindParam(":uname",$user_name);
                  $stmt->bindParam(":email",$user_email);
                  $stmt->bindParam(":pass",$user_password);
@@ -47,7 +47,7 @@ $response = [];
                  if($stmt->execute())
                  {
                      echo "registered";
-                     header('Location: http://localhost/Project-MidSeason/Front.html');
+
                  }
                  else
                  {

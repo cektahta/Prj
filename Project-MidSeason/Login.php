@@ -2,35 +2,52 @@
 session_start();
 require_once 'dbconfig.php';
 
-if(isset($_POST['logb']))
+
+if(!empty($_POST))
 {
-    $user_email = trim($_POST['lmail']);
-    $user_password = trim($_POST['lpassword']);
+    $user_email = $_POST['lmail'];
+    $user_password = $_POST['lpassword'];
 
-    $password = md5($user_password);
 
-    try
-    {
 
-        $stmt = $db_con->prepare("SELECT * FROM tbl_users WHERE user_email=:email");
-        $stmt->execute(array(":email"=>$user_email));
-        $row = $stmt->fetch(PDO::FETCH_ASSOC);
-        $count = $stmt->rowCount();
-
-        if($row['user_password']==$password){
-
-            echo "ok"; // log in
-            $_SESSION['user_session'] = $row['user_id'];
+    function secureCheck($user_email , $user_password) {
+        if(strlen($user_email) == 0){
+            return false;
         }
-        else{
-
-            echo "email or password does not exist."; // wrong details
+        if(strlen($user_password) == 0){
+            return false;
         }
-
+        return true;
     }
-    catch(PDOException $e){
-        echo $e->getMessage();
+    if(secureCheck($user_email,$user_password)){
+        try
+        {
+
+            $stmt = $db_con->prepare("SELECT * FROM users WHERE user_email=:email");
+            $stmt->execute(array(":email"=>$user_email));
+            $row = $stmt->fetch(PDO::FETCH_ASSOC);
+            $count = $stmt->rowCount();
+            if($count == 1) {
+                if ($row['user_password'] == $user_password) {
+
+                    echo "ok"; // log in
+                    $_SESSION['user_session'] = $row['user_id'];
+                    header("Location: http://localhost/Project-MidSeason/Front.html");
+                } else {
+
+                    echo "email or password does not exist."; // wrong details
+                }
+            } else {
+                echo "There is not a registered account with this name";
+            }
+
+        }
+        catch(PDOException $e){
+            echo $e->getMessage();
+        }
+
+    }else{
+        echo "Username and password cannot be empty";
     }
 }
-
 ?>
