@@ -27,15 +27,19 @@
         </div>
 
     </div>
+    <div id="error">
+        <!-- error will be shown here ! -->
+    </div>
     <div id="scontainer">
         <div id="fholder">
             <div id="uprline"></div>
-            <form id="loginf" action="" method="post">
-                <input class="fspan" type="text" name="cmail" placeholder="Enter E-mail">
+            <form id="loginf" action="Login.php" method="post">
+                <span>Type your e-mail here:</span>
+                <input class="fspan" type="text" name="lmail" placeholder="Enter E-mail">
                 <span>Type your password here:</span>
-                <input class="fspan" type="text" name="password" placeholder="Your Password">
+                <input class="fspan" type="text" name="lpassword" placeholder="Your Password">
 
-                <button  id="fbutton" class="button">Submit</button>
+                <button  id="fbutton" class="button" name="logb">Submit</button>
 
             </form>
             <div id="lwrrline"></div>
