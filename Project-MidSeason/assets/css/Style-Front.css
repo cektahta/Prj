@@ -1,0 +1,152 @@
+body {
+    background-image: url(../images/patter.jpg);
+}
+#container {
+    width: 1200px;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: azure;
+    font-family: 'Fjalla One', sans-serif;
+
+
+
+}
+#header {
+    width:1200px;
+    height: 100px;
+    background-color: #DDA0DD;
+    margin-top: 10px;
+    position: absolute;
+}
+#holder {
+    width: 1200px;
+    margin-top: 5px;
+    height: 90px;
+    position: absolute;
+    background-color: white;
+}
+
+#logo {
+    background: url(../images/foodLogo.jpg) no-repeat;
+    height: 120px;
+    width: 130px;
+    background-size:contain;
+    position: absolute;
+    margin-left: 10px;
+
+}
+.button {
+    background-color: white;
+    color: #DDA0DD;
+    font-size: 1.6em;
+    font-weight: bolder;
+    float: right;
+    margin-left: 10px;
+    margin-top: 40px;
+
+}
+.button:hover {
+    background-color: #DDA0DD; /* Green */
+    color: white;
+}
+#menu {
+    margin-right: 150px;
+}
+#lheader {
+    width:1200px;
+    background-color: white;
+    height:30px;
+    margin-top:107px;
+    position: absolute;
+    border-bottom: 1px solid #DDA0DD ;
+
+}
+i {
+    color:darkorchid;
+    font-size: 30px;
+}
+.sign {
+    color: #DDA0DD;
+    font-weight: bolder;
+    float: right;
+    margin-left: 10px;
+    margin-top: 5px;
+
+}
+#spanz {
+    margin-right: 150px;
+    background-color: white;
+
+
+}
+.sign:hover {
+    background-color: #DDA0DD; /* Green */
+    color: white;
+}
+#scontainer {
+    margin-right: 45px;
+}
+.inrrbox-1 {
+    width: 360px;
+    height: 250px;
+    margin-top: 150px;
+    background-color: white;
+    border: 1px solid #DDA0DD ;
+    margin-left: 15px;
+    float: right;
+    background: url(../images/food1.jpg) no-repeat;
+    box-shadow: 0 0 5px rgba(0,0,0,.5) ;
+
+}
+.inrrbox-2 {
+    width: 360px;
+    height: 250px;
+    margin-top: 10px;
+    background-color: white;
+    margin-left: 15px;
+    border: 1px solid #DDA0DD ;
+    float: right;
+    background: url(../images/food1.jpg) no-repeat;
+    box-shadow: 0 0 5px rgba(0,0,0,.5) ;
+}
+.inrrbox-3 {
+    width: 360px;
+    height: 250px;
+    margin-top: 10px;
+    background-color: white;
+    margin-left: 15px;
+    border: 1px solid #DDA0DD ;
+    float: right;
+    background: url(../images/food1.jpg) no-repeat;
+    box-shadow: 0 0 5px rgba(0,0,0,.5) ;
+}
+#footer {
+    width: 1200px;
+    height: 80px;
+    background-color:white;
+    border: 1px solid #DDA0DD ;
+    margin-top: 950px;
+    position: absolute;
+    border-bottom: 10px solid #DDA0DD;
+}
+.text {
+    color: white;
+
+}
+.head {
+
+    margin-top: 190px;
+    font-weight: bolder;
+    color: white;
+    font-size: 1.2em;
+}
+.header {
+    color: white;
+}
+.moover:hover{
+    margin-top: 160px;
+}
+.moover {
+    margin-top: 190px;
+}

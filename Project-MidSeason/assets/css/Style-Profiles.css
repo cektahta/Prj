@@ -1,0 +1,259 @@
+body {
+    background-image: url(../images/patter.jpg);
+}
+#container {
+    width: 1200px;
+    height: 799px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: azure;
+    font-family: 'Fjalla One', sans-serif;
+
+
+
+}
+#header {
+    width:1200px;
+    height: 100px;
+    background-color: #DDA0DD;
+    margin-top: 10px;
+    position: absolute;
+}
+#holder {
+    width: 1200px;
+    margin-top: 5px;
+    height: 90px;
+    position: absolute;
+    background-color: white;
+}
+
+#logo {
+    background: url(../images/foodLogo.jpg) no-repeat;
+    height: 120px;
+    width: 130px;
+    background-size:contain;
+    position: absolute;
+    margin-left: 10px;
+
+}
+.button {
+    background-color: white;
+    color: #DDA0DD;
+    font-size: 1.6em;
+    font-weight: bolder;
+    float: right;
+    margin-left: 10px;
+    margin-top: 40px;
+
+}
+.button:hover {
+    background-color: #DDA0DD; /* Green */
+    color: white;
+}
+#menu {
+    margin-right: 150px;
+}
+#lheader {
+    width:1200px;
+    background-color: white;
+    height:30px;
+    margin-top:107px;
+    position: absolute;
+    border-bottom: 1px solid #DDA0DD ;
+
+}
+i {
+    color:darkorchid;
+    font-size: 35px;
+    font-family: 'Mogra', cursive;
+}
+.sign {
+    color: #DDA0DD;
+    font-weight: bolder;
+    float: right;
+    margin-left: 10px;
+    margin-top: 5px;
+
+}
+#spanz {
+    margin-right: 150px;
+    background-color: white;
+
+
+}
+.sign:hover {
+    background-color: #DDA0DD; /* Green */
+    color: white;
+}
+#scontainer {
+    margin-right: 45px;
+}
+.inrrbox-1 {
+    width: 360px;
+    height: 250px;
+    margin-top: 150px;
+    background-color: white;
+    border: 1px solid #DDA0DD ;
+    margin-left: 15px;
+    float: right;
+    background: url(../images/food1.jpg) no-repeat;
+    box-shadow: 0 0 5px rgba(0,0,0,.5) ;
+
+}
+.inrrbox-2 {
+    width: 360px;
+    height: 250px;
+    margin-top: 10px;
+    background-color: white;
+    margin-left: 15px;
+    border: 1px solid #DDA0DD ;
+    float: right;
+    background: url(../images/food1.jpg) no-repeat;
+    box-shadow: 0 0 5px rgba(0,0,0,.5) ;
+}
+.inrrbox-3 {
+    width: 360px;
+    height: 250px;
+    margin-top: 10px;
+    background-color: white;
+    margin-left: 15px;
+    border: 1px solid #DDA0DD ;
+    float: right;
+    background: url(../images/food1.jpg) no-repeat;
+    box-shadow: 0 0 5px rgba(0,0,0,.5) ;
+}
+#footer {
+    width: 1200px;
+    height: 80px;
+    background-color:white;
+    border: 1px solid #DDA0DD ;
+    margin-top: 700px;
+    position: absolute;
+    border-bottom: 5px solid #DDA0DD;
+}
+.text {
+    color: white;
+
+}
+.head {
+
+    margin-top: 190px;
+    font-weight: bolder;
+    color: white;
+    font-size: 1.2em;
+}
+.header {
+    color: white;
+}
+.moover:hover{
+    margin-top: 160px;
+}
+.moover {
+    margin-top: 190px;
+}
+
+#fholder {
+    width:1160px;
+    height:560px;
+    margin-left: 20px;
+
+    background-color: white;
+    border: 1px solid #DDA0DD;
+    position: absolute;
+    margin-top: 138px;
+    box-shadow: 0 0 5px rgba(0,0,0,.5) ;
+}
+.fspan {
+    display: block;
+
+}
+input {
+    margin-bottom: 10px;
+    display: block;
+    box-shadow: 0 0 5px rgba(0,0,0,.5) ;
+}
+#loginf {
+    margin-top: 210px;
+    margin-left: 220px;
+
+}
+#fbutton {
+    margin-right: 255px;
+    color: black;
+    font-size: 1.2em;
+    margin-top: 10px;
+
+}
+#uprline {
+    width: 600px;
+    height: 2px;
+
+    position: absolute;
+    margin-top: 180px;
+    background-color: #DDA0DD;
+
+}
+#lwrrline {
+    width: 600px;
+    height: 2px;
+
+    position: absolute;
+    margin-top:70px;
+    background-color: #DDA0DD;
+}
+.profiles1 {
+    width: 350px;
+    height: 260px;
+    margin-left: 10px;
+    background-color: azure;
+    border: 1px solid #DDA0DD;
+    float: right;
+    border-radius: 7px;
+    box-shadow: 0 0 2px rgba(0,0,0,.5) ;
+}
+.profiles2 {
+    width: 350px;
+    height: 260px;
+    background-color: azure;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 1px solid #DDA0DD;
+    float: right;
+    border-radius: 7px;
+    box-shadow: 0 0 5px rgba(0,0,0,.5) ;
+}
+#proholder {
+    margin-top: 10px;
+    margin-right: 40px;
+
+}
+.prpics {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    margin-left: 5px;
+    margin-top: 5px;
+    border: 1px solid #DDA0DD;
+    position: absolute;
+    background: url(../images/profile_picture.jpg) no-repeat;
+    background-size: contain;
+    border-radius: 7px;
+}
+.ginfo {
+    margin-left: 165px;
+    position: absolute;
+    margin-top: 20px;
+    color:darkgrey;
+
+}
+.sinfo {
+    display: block;
+    margin-top: 15px;
+
+}
+.pinfo {
+    margin-top: 175px;
+    padding: 10px;
+    color:darkgrey;
+    box-shadow: 0 0 5px rgba(0,0,0,.5) ;
+}
